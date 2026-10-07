@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +21,7 @@
         }
 
         h1 {
-            font-size: 42px;
+            font-size: 40px;
             margin-bottom: 10px;
         }
 
@@ -30,14 +31,14 @@
         }
 
         button {
-            margin-top: 30px;
-            padding: 16px 45px;
+            display: block;
+            width: 220px;
+            margin: 20px auto;
+            padding: 15px;
             font-size: 18px;
             font-weight: bold;
             border: none;
             border-radius: 12px;
-            background: white;
-            color: black;
             cursor: pointer;
         }
 
@@ -56,17 +57,23 @@
         <p>Fitness • Strength • Kick Boxing</p>
 
         <button onclick="startApp()">START</button>
-<button onclick="alert('Training Programs 💪')">PROGRAMS</button>
+
+        <button onclick="openPrograms()">PROGRAMS</button>
+
     </div>
 
     <script>
+
         function startApp() {
             alert("Welcome to Coach Bilel! 🔥");
-            function openPrograms() {
-    alert("Training Programs 💪");
-            }
         }
+
+        function openPrograms() {
+            alert("Training Programs 💪");
+        }
+
     </script>
-}
+
 </body>
+
 </html>
