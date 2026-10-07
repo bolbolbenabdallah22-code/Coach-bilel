@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Training Programs</title>
+    <title>Training Programs - Coach Bilel</title>
 
     <style>
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -17,23 +18,41 @@
         }
 
         .container {
-            padding: 60px 20px;
+            padding: 50px 20px;
         }
 
         h1 {
-            font-size: 35px;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #aaa;
+            margin-bottom: 30px;
         }
 
         .program {
-            background: #222;
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 15px;
+            display: block;
             max-width: 350px;
+            margin: 18px auto;
+            padding: 20px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 15px;
         }
 
         .program h2 {
-            margin-bottom: 10px;
+            margin: 0 0 10px;
+        }
+
+        .program p {
+            color: #bbb;
+            margin: 0;
+        }
+
+        .program:active {
+            transform: scale(0.97);
         }
 
         .back {
@@ -42,7 +61,9 @@
             border: none;
             border-radius: 10px;
             font-weight: bold;
+            font-size: 16px;
         }
+
     </style>
 </head>
 
@@ -52,24 +73,49 @@
 
         <h1>Training Programs 💪</h1>
 
-        <a href="strength.html" style="text-decoration: none; color: white;">
+        <p class="subtitle">
+            Choose your training program
+        </p>
 
-    <div class="program">
-        <h2>💪 Strength</h2>
-        <p>Build strength and muscle.</p>
-    </div>
+
+        <!-- STRENGTH -->
+
+        <a href="strength.html" class="program">
+
+            <h2>💪 Strength</h2>
+
+            <p>
+                Build strength and muscle.
+            </p>
 
         </a>
 
-        <div class="program">
-            <h2>🥊 Kick Boxing</h2>
-            <p>Improve fitness, speed and technique.</p>
-        </div>
 
-        <div class="program">
+        <!-- KICK BOXING -->
+
+        <a href="#" class="program">
+
+            <h2>🥊 Kick Boxing</h2>
+
+            <p>
+                Improve fitness, speed and technique.
+            </p>
+
+        </a>
+
+
+        <!-- FAT LOSS -->
+
+        <a href="#" class="program">
+
             <h2>🔥 Fat Loss</h2>
-            <p>Burn calories and improve conditioning.</p>
-        </div>
+
+            <p>
+                Burn calories and improve conditioning.
+            </p>
+
+        </a>
+
 
         <button class="back" onclick="history.back()">
             ← Back
